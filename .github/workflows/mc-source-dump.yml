@@ -17,6 +17,10 @@ on:
         description: "Optional extended regex to search for across all Minecraft sources"
         required: false
         default: ""
+      files:
+        description: "Space-separated resource paths or globs from the Minecraft jars, e.g. data/minecraft/trade_set/*"
+        required: false
+        default: ""
 
 jobs:
   dump:
@@ -36,10 +40,24 @@ jobs:
           CLASSES: ${{ inputs.classes }}
           MODE: ${{ inputs.mode }}
           PATTERN: ${{ inputs.grep }}
+          FILES: ${{ inputs.files }}
         run: |
-          mkdir -p /tmp/mc-src
+          mkdir -p /tmp/mc-src /tmp/mc-res
           find ~/.gradle .gradle -name 'minecraft-*sources.jar' 2>/dev/null | while read -r jar; do unzip -qo "$jar" -d /tmp/mc-src; done
           CP=$(find ~/.gradle .gradle -name 'minecraft-*.jar' ! -name '*sources*' 2>/dev/null | tr '\n' ':')
+          for jar in ${CP//:/ }; do unzip -qo "$jar" 'data/*' 'assets/*' -d /tmp/mc-res 2>/dev/null || true; done
+          for p in $FILES; do
+            for m in /tmp/mc-res/$p; do
+              if [ -d "$m" ]; then
+                echo "##### DIR: ${m#/tmp/mc-res/}"
+                find "$m" | sed 's#/tmp/mc-res/##' | sort | head -n 300
+              else
+                echo "##### FILE: ${m#/tmp/mc-res/}"
+                cat "$m" 2>/dev/null || echo "(not found)"
+                echo
+              fi
+            done
+          done
           if [ -n "$PATTERN" ]; then
             echo "##### GREP: $PATTERN"
             grep -rnE "$PATTERN" /tmp/mc-src --include=*.java | sed 's#/tmp/mc-src/##' | head -n 400
