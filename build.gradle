@@ -22,6 +22,15 @@ loom {
 	}
 }
 
+// fishing: server game tests in src/gametest. `./gradlew build` runs them through runGameTest.
+fabricApi {
+	configureTests {
+		createSourceSet = true
+		modId = "examplemod-gametest"
+		enableClientGameTests = false
+	}
+}
+
 dependencies {
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"

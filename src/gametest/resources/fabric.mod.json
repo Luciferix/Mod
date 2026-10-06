@@ -1,0 +1,18 @@
+{
+	"schemaVersion": 1,
+	"id": "examplemod-gametest",
+	"version": "1.0.0",
+	"name": "Example Mod Game Tests",
+	"description": "Server game tests for the fishing rework. Not part of the released mod.",
+	"license": "All-Rights-Reserved",
+	"environment": "*",
+	"entrypoints": {
+		"fabric-gametest": [
+			"com.example.examplemod.fishing.test.FishingGameTests"
+		]
+	},
+	"depends": {
+		"examplemod": "*",
+		"fabric-gametest-api-v1": "*"
+	}
+}
