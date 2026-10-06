@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "examplemod",
+	"version": "${version}",
+	"name": "Example Mod",
+	"description": "Development project for a feature that will be merged into the main mod.",
+	"authors": [
+		"Luciferix"
+	],
+	"license": "All-Rights-Reserved",
+	"icon": "assets/examplemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.example.examplemod.ExampleMod",
+			"com.example.examplemod.bigfeature.BigFeature"
+		],
+		"client": [
+			"com.example.examplemod.client.ExampleModClient",
+			"com.example.examplemod.bigfeature.client.BigFeatureClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
