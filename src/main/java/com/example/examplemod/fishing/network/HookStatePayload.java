@@ -22,6 +22,7 @@ public record HookStatePayload(
 		float maxHp,
 		int ticksLeft,
 		int maxTicks,
+		boolean overweight,
 		HookEvent event
 ) implements CustomPacketPayload {
 	public static final Type<HookStatePayload> TYPE = new Type<>(FishingFeature.id("hook_state"));
@@ -30,7 +31,7 @@ public record HookStatePayload(
 
 	public static HookStatePayload of(int hookId, HookSession session, HookEvent event) {
 		return new HookStatePayload(hookId, session.phase(), session.rarity(), session.hp(), session.maxHp(),
-				session.ticksLeft(), session.maxTicks(), event);
+				session.ticksLeft(), session.maxTicks(), session.overweight(), event);
 	}
 
 	private static HookStatePayload read(FriendlyByteBuf buf) {
@@ -42,6 +43,7 @@ public record HookStatePayload(
 				buf.readFloat(),
 				buf.readVarInt(),
 				buf.readVarInt(),
+				buf.readBoolean(),
 				HookEvent.STREAM_CODEC.decode(buf)
 		);
 	}
@@ -54,6 +56,7 @@ public record HookStatePayload(
 		buf.writeFloat(this.maxHp);
 		buf.writeVarInt(this.ticksLeft);
 		buf.writeVarInt(this.maxTicks);
+		buf.writeBoolean(this.overweight);
 		HookEvent.STREAM_CODEC.encode(buf, this.event);
 	}
 

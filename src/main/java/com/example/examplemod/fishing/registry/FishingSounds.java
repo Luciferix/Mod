@@ -35,6 +35,7 @@ public final class FishingSounds {
 	public static final SoundEvent TACKLE_DETACH = register("fishing.tackle_detach");
 	public static final SoundEvent INDEX_OPEN = register("fishing.index_open");
 	public static final SoundEvent INDEX_PAGE = register("fishing.index_page");
+	public static final SoundEvent INDEX_SELECT = register("fishing.index_select");
 
 	private FishingSounds() {
 	}

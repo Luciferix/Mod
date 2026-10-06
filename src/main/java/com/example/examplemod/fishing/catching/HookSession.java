@@ -26,6 +26,7 @@ public final class HookSession {
 	private float maxHp;
 	private int ticksLeft;
 	private int maxTicks;
+	private boolean overweight;
 
 	// ---- Server only ----
 	private FishEncounter encounter;
@@ -76,6 +77,11 @@ public final class HookSession {
 		return this.maxTicks;
 	}
 
+	/** Whether the fish is heavier than the line's strength (a harder fight). */
+	public boolean overweight() {
+		return this.overweight;
+	}
+
 	public FishEncounter encounter() {
 		return this.encounter;
 	}
@@ -96,6 +102,7 @@ public final class HookSession {
 		this.maxHp = encounter.maxHp();
 		this.ticksLeft = encounter.fightTicks();
 		this.maxTicks = encounter.fightTicks();
+		this.overweight = encounter.overweight();
 	}
 
 	/** Counts down the window to set the hook; returns true once the fish has lost interest. */
@@ -175,13 +182,14 @@ public final class HookSession {
 		this.maxHp = 0.0F;
 		this.ticksLeft = 0;
 		this.maxTicks = 0;
+		this.overweight = false;
 		this.lowHpAnnounced = false;
 		Arrays.fill(this.recentReelTicks, 0L);
 	}
 
 	// ---- Client mirror ----
 
-	public void applySync(Phase phase, FishRarity rarity, float hp, float maxHp, int ticksLeft, int maxTicks, HookEvent event, long clientTick) {
+	public void applySync(Phase phase, FishRarity rarity, float hp, float maxHp, int ticksLeft, int maxTicks, boolean overweight, HookEvent event, long clientTick) {
 		if (phase != this.phase) {
 			this.phaseStartedAt = clientTick;
 			this.clientRevealStep = 0;
@@ -193,6 +201,7 @@ public final class HookSession {
 		this.maxHp = maxHp;
 		this.ticksLeft = ticksLeft;
 		this.maxTicks = maxTicks;
+		this.overweight = overweight;
 		this.lastEvent = event;
 		this.lastEventAt = clientTick;
 	}

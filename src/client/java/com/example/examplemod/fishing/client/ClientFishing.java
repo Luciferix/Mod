@@ -13,6 +13,7 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.projectile.FishingHook;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
@@ -41,7 +42,8 @@ public final class ClientFishing {
 		ClientPlayNetworking.registerGlobalReceiver(HookStatePayload.TYPE, (payload, context) -> handle(context.client(), payload));
 	}
 
-	public static long now(ClientLevel level) {
+	/** The clock that client-side animation timestamps on {@link HookSession} use. */
+	public static long now(Level level) {
 		return level.getGameTime();
 	}
 
@@ -52,7 +54,7 @@ public final class ClientFishing {
 		}
 
 		HookSession session = FishingHookAccess.session(hook);
-		session.applySync(payload.phase(), payload.rarity(), payload.hp(), payload.maxHp(), payload.ticksLeft(), payload.maxTicks(), payload.event(), now(level));
+		session.applySync(payload.phase(), payload.rarity(), payload.hp(), payload.maxHp(), payload.ticksLeft(), payload.maxTicks(), payload.overweight(), payload.event(), now(level));
 		if (session.isEngaged()) {
 			ACTIVE.add(hook);
 		}

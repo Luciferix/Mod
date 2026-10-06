@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.example.examplemod.fishing.client.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"FishingHookRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

@@ -21,7 +21,11 @@
 		]
 	},
 	"mixins": [
-		"examplemod.fishing.mixins.json"
+		"examplemod.fishing.mixins.json",
+		{
+			"config": "examplemod.fishing.client.mixins.json",
+			"environment": "client"
+		}
 	],
 	"depends": {
 		"fabricloader": ">=0.19.5",
