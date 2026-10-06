@@ -1,11 +1,11 @@
 package com.example.examplemod.fishing.registry;
 
-import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 
 import net.minecraft.core.Registry;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.util.Unit;
 
 import net.fabricmc.fabric.api.item.v1.ItemComponentTooltipProviderRegistry;
@@ -43,7 +43,7 @@ public final class FishingComponents {
 	 * and the fish item models render a black silhouette when it is present.
 	 */
 	public static final DataComponentType<Unit> INDEX_SILHOUETTE = register("index_silhouette",
-			DataComponentType.<Unit>builder().persistent(Codec.unit(Unit.INSTANCE)).networkSynchronized(ByteBufCodecs.fromCodec(Codec.unit(Unit.INSTANCE))));
+			DataComponentType.<Unit>builder().persistent(MapCodec.unit(Unit.INSTANCE).codec()).networkSynchronized(StreamCodec.unit(Unit.INSTANCE)));
 
 	private FishingComponents() {
 	}

@@ -7,10 +7,15 @@ import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.example.examplemod.fishing.advancement.FishingCriteria;
+import com.example.examplemod.fishing.gear.TackleInteractions;
+import com.example.examplemod.fishing.network.FishingNetworking;
 import com.example.examplemod.fishing.registry.FishingAttachments;
+import com.example.examplemod.fishing.registry.FishingCommands;
 import com.example.examplemod.fishing.registry.FishingComponents;
 import com.example.examplemod.fishing.registry.FishingCreativeTab;
 import com.example.examplemod.fishing.registry.FishingItems;
+import com.example.examplemod.fishing.registry.FishingLoot;
 import com.example.examplemod.fishing.registry.FishingRegistries;
 import com.example.examplemod.fishing.registry.FishingSounds;
 
@@ -35,6 +40,11 @@ public final class FishingFeature implements ModInitializer {
 		FishingItems.init();
 		FishingCreativeTab.init();
 		FishingAttachments.init();
+		FishingCriteria.init();
+		FishingNetworking.init();
+		FishingLoot.init();
+		TackleInteractions.init();
+		FishingCommands.init();
 	}
 
 	public static Identifier id(String path) {

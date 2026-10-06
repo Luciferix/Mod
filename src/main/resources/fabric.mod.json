@@ -20,6 +20,9 @@
 			"com.example.examplemod.fishing.client.FishingFeatureClient"
 		]
 	},
+	"mixins": [
+		"examplemod.fishing.mixins.json"
+	],
 	"depends": {
 		"fabricloader": ">=0.19.5",
 		"minecraft": "~26.3",

@@ -37,7 +37,7 @@ public record FishSpecies(
 		Optional<Component> hint,
 		Component description
 ) {
-	private static final Codec<List<HolderSet<Biome>>> HABITATS_CODEC = RegistryCodecs.homogeneousList(Registries.BIOME).listOf();
+	private static final Codec<List<HolderSet<Biome>>> HABITATS_CODEC = RegistryCodecs.holderSet(Registries.BIOME).listOf();
 
 	public static final Codec<FishSpecies> CODEC = RecordCodecBuilder.create(instance -> instance.group(
 			Item.CODEC.fieldOf("item").forGetter(FishSpecies::item),
