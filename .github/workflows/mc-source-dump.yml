@@ -1,0 +1,55 @@
+# Prints decompiled Minecraft classes into the job log, for development sessions
+# whose sandbox can't download Minecraft. Run it manually from the Actions tab.
+
+name: mc-source-dump
+on:
+  workflow_dispatch:
+    inputs:
+      classes:
+        description: "Space-separated class paths to print, e.g. net/minecraft/world/item/FishingRodItem"
+        required: false
+        default: ""
+      mode:
+        description: "source (decompiled code) or javap (member signatures only)"
+        required: false
+        default: "source"
+      grep:
+        description: "Optional extended regex to search for across all Minecraft sources"
+        required: false
+        default: ""
+
+jobs:
+  dump:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v6
+      - name: setup jdk
+        uses: actions/setup-java@v5
+        with:
+          java-version: '25'
+          distribution: 'microsoft'
+      - name: decompile minecraft
+        run: chmod +x ./gradlew && ./gradlew genSources --no-configuration-cache -q
+      - name: dump
+        env:
+          CLASSES: ${{ inputs.classes }}
+          MODE: ${{ inputs.mode }}
+          PATTERN: ${{ inputs.grep }}
+        run: |
+          mkdir -p /tmp/mc-src
+          find ~/.gradle .gradle -name 'minecraft-*sources.jar' 2>/dev/null | while read -r jar; do unzip -qo "$jar" -d /tmp/mc-src; done
+          CP=$(find ~/.gradle .gradle -name 'minecraft-*.jar' ! -name '*sources*' 2>/dev/null | tr '\n' ':')
+          if [ -n "$PATTERN" ]; then
+            echo "##### GREP: $PATTERN"
+            grep -rnE "$PATTERN" /tmp/mc-src --include=*.java | sed 's#/tmp/mc-src/##' | head -n 400
+          fi
+          for c in $CLASSES; do
+            echo "##### CLASS: $c"
+            if [ "$MODE" = "javap" ]; then
+              javap -p -cp "$CP" "${c//\//.}"
+            else
+              cat "/tmp/mc-src/$c.java" || echo "(not found)"
+            fi
+          done
+          echo "##### END"
