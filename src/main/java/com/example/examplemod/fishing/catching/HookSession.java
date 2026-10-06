@@ -41,6 +41,7 @@ public final class HookSession {
 	private long phaseStartedAt;
 	private HookEvent lastEvent = HookEvent.SYNC;
 	private long lastEventAt;
+	private int clientRevealStep;
 
 	public Phase phase() {
 		return this.phase;
@@ -183,6 +184,7 @@ public final class HookSession {
 	public void applySync(Phase phase, FishRarity rarity, float hp, float maxHp, int ticksLeft, int maxTicks, HookEvent event, long clientTick) {
 		if (phase != this.phase) {
 			this.phaseStartedAt = clientTick;
+			this.clientRevealStep = 0;
 		}
 
 		this.phase = phase;
@@ -212,6 +214,15 @@ public final class HookSession {
 
 	public long lastEventAt() {
 		return this.lastEventAt;
+	}
+
+	/** Last rarity-reveal step the client played a sound for. */
+	public int clientRevealStep() {
+		return this.clientRevealStep;
+	}
+
+	public void setClientRevealStep(int step) {
+		this.clientRevealStep = step;
 	}
 
 	public enum Phase {

@@ -22,6 +22,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.permissions.Permissions;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
 
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
@@ -103,7 +104,7 @@ public final class FishingCommands {
 		FishEncounter encounter = new FishEncounter(species.get(), weightKg, normalized, false, 0.0F, 0, false);
 		ItemStack fish = CatchRewards.createFish(encounter, Optional.of(player.getPlainTextName()));
 		if (!player.addItem(fish)) {
-			player.drop(fish, false);
+			player.level().addFreshEntity(new ItemEntity(player.level(), player.getX(), player.getY(), player.getZ(), fish));
 		}
 
 		return 1;
