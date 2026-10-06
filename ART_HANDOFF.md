@@ -209,4 +209,4 @@ The code compiles and a server smoke test runs in CI, but none of this has been 
 
 ## 9. Changelog of this file
 
-- Initial version: all placeholders listed.
+- Initial version: all placeholders listed. The server game tests (data loading, a full bite-to-landing catch) pass in CI; nothing client-side has been seen yet.
