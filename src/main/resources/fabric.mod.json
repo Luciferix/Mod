@@ -13,11 +13,11 @@
 	"entrypoints": {
 		"main": [
 			"com.example.examplemod.ExampleMod",
-			"com.example.examplemod.bigfeature.BigFeature"
+			"com.example.examplemod.fishing.FishingFeature"
 		],
 		"client": [
 			"com.example.examplemod.client.ExampleModClient",
-			"com.example.examplemod.bigfeature.client.BigFeatureClient"
+			"com.example.examplemod.fishing.client.FishingFeatureClient"
 		]
 	},
 	"depends": {

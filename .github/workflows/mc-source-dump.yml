@@ -65,7 +65,7 @@ jobs:
           for c in $CLASSES; do
             echo "##### CLASS: $c"
             if [ "$MODE" = "javap" ]; then
-              javap -p -cp "$CP" "${c//\//.}"
+              javap -p -cp "$CP" "${c//\//.}" || echo "(not found)"
             else
               cat "/tmp/mc-src/$c.java" || echo "(not found)"
             fi
