@@ -1,0 +1,36 @@
+{
+	"item": "examplemod:glacial_behemoth",
+	"rarity": "legendary",
+	"weight": 10,
+	"size": {
+		"min_kg": 150.0,
+		"max_kg": 600.0
+	},
+	"difficulty": 1.7,
+	"habitats": [
+		"#examplemod:fishing_habitat/frozen_seas"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:golden": 1.5,
+			"examplemod:fish": 1.0
+		}
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.glacial_behemoth.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.glacial_behemoth.description"
+	},
+	"conditions": [
+		{
+			"type": "minecraft:time_check",
+			"clock": "minecraft:overworld",
+			"period": 24000,
+			"value": {
+				"min": 13000,
+				"max": 23000
+			}
+		}
+	]
+}

@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "misc",
+	"ingredients": [
+		"minecraft:gold_ingot",
+		"minecraft:gold_nugget",
+		"minecraft:gold_nugget"
+	],
+	"result": {
+		"id": "examplemod:gilded_hook"
+	}
+}

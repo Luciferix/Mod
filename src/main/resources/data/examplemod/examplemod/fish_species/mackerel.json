@@ -1,0 +1,28 @@
+{
+	"item": "examplemod:mackerel",
+	"rarity": "common",
+	"weight": 15,
+	"size": {
+		"min_kg": 0.2,
+		"max_kg": 1.8
+	},
+	"difficulty": 1.0,
+	"habitats": [
+		"#examplemod:fishing_habitat/oceans",
+		"#examplemod:fishing_habitat/coasts"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:fish": 1.0,
+			"examplemod:shimmer": 1.2,
+			"examplemod:worm": 0.5
+		},
+		"unbaited": 0.5
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.mackerel.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.mackerel.description"
+	}
+}

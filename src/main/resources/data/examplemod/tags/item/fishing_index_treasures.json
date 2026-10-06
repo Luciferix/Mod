@@ -1,0 +1,30 @@
+{
+	"values": [
+		"minecraft:nautilus_shell",
+		"minecraft:name_tag",
+		"minecraft:saddle",
+		"minecraft:enchanted_book",
+		"minecraft:gold_nugget",
+		"minecraft:emerald",
+		"minecraft:experience_bottle",
+		"examplemod:golden_grub",
+		"examplemod:barbed_hook",
+		"examplemod:braided_line",
+		"examplemod:copper_reel",
+		"minecraft:diamond",
+		"minecraft:prismarine_crystals",
+		"minecraft:spyglass",
+		"minecraft:trident",
+		"examplemod:gilded_hook",
+		"examplemod:lucky_hook",
+		"examplemod:reinforced_line",
+		"examplemod:iron_reel",
+		"examplemod:shimmer_lure",
+		"minecraft:heart_of_the_sea",
+		"examplemod:heirloom_fishing_rod",
+		"examplemod:phantom_line",
+		"examplemod:clockwork_reel",
+		"minecraft:enchanted_golden_apple",
+		"minecraft:totem_of_undying"
+	]
+}

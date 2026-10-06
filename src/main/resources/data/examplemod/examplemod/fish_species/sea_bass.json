@@ -1,0 +1,27 @@
+{
+	"item": "examplemod:sea_bass",
+	"rarity": "uncommon",
+	"weight": 10,
+	"size": {
+		"min_kg": 0.5,
+		"max_kg": 9.0
+	},
+	"difficulty": 1.0,
+	"habitats": [
+		"#examplemod:fishing_habitat/oceans",
+		"#examplemod:fishing_habitat/coasts"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:fish": 1.2,
+			"examplemod:worm": 0.8
+		},
+		"unbaited": 0.3
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.sea_bass.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.sea_bass.description"
+	}
+}

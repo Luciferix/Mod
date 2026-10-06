@@ -1,0 +1,28 @@
+{
+	"criteria": {
+		"legendary": {
+			"trigger": "examplemod:treasure_found",
+			"conditions": {
+				"tier": "legendary"
+			}
+		}
+	},
+	"display": {
+		"icon": {
+			"id": "minecraft:heart_of_the_sea"
+		},
+		"title": {
+			"translate": "advancements.examplemod.fishing.legendary_treasure.title"
+		},
+		"description": {
+			"translate": "advancements.examplemod.fishing.legendary_treasure.description"
+		},
+		"frame": "challenge"
+	},
+	"parent": "examplemod:fishing/treasure",
+	"requirements": [
+		[
+			"legendary"
+		]
+	]
+}

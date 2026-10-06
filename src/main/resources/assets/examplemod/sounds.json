@@ -1,0 +1,209 @@
+{
+	"fishing.bite": {
+		"subtitle": "subtitles.examplemod.fishing.bite",
+		"sounds": [
+			{
+				"name": "minecraft:entity.fishing_bobber.splash",
+				"type": "event"
+			}
+		]
+	},
+	"fishing.reveal_tick": {
+		"subtitle": "subtitles.examplemod.fishing.reveal_tick",
+		"sounds": [
+			{
+				"name": "minecraft:block.note_block.hat",
+				"type": "event"
+			}
+		]
+	},
+	"fishing.reveal.uncommon": {
+		"subtitle": "subtitles.examplemod.fishing.reveal.uncommon",
+		"sounds": [
+			{
+				"name": "minecraft:block.note_block.chime",
+				"type": "event"
+			}
+		]
+	},
+	"fishing.reveal.rare": {
+		"subtitle": "subtitles.examplemod.fishing.reveal.rare",
+		"sounds": [
+			{
+				"name": "minecraft:block.amethyst_block.chime",
+				"type": "event"
+			}
+		]
+	},
+	"fishing.reveal.epic": {
+		"subtitle": "subtitles.examplemod.fishing.reveal.epic",
+		"sounds": [
+			{
+				"name": "minecraft:block.amethyst_block.resonate",
+				"type": "event"
+			}
+		]
+	},
+	"fishing.reveal.legendary": {
+		"subtitle": "subtitles.examplemod.fishing.reveal.legendary",
+		"sounds": [
+			{
+				"name": "minecraft:ui.toast.challenge_complete",
+				"type": "event"
+			}
+		]
+	},
+	"fishing.hook_set": {
+		"subtitle": "subtitles.examplemod.fishing.hook_set",
+		"sounds": [
+			{
+				"name": "minecraft:entity.fishing_bobber.retrieve",
+				"type": "event"
+			}
+		]
+	},
+	"fishing.reel": {
+		"subtitle": "subtitles.examplemod.fishing.reel",
+		"sounds": [
+			{
+				"name": "minecraft:item.crossbow.loading_middle",
+				"type": "event"
+			}
+		]
+	},
+	"fishing.reel_critical": {
+		"subtitle": "subtitles.examplemod.fishing.reel_critical",
+		"sounds": [
+			{
+				"name": "minecraft:entity.player.attack.crit",
+				"type": "event"
+			}
+		]
+	},
+	"fishing.fish_pull": {
+		"subtitle": "subtitles.examplemod.fishing.fish_pull",
+		"sounds": [
+			{
+				"name": "minecraft:entity.generic.splash",
+				"type": "event"
+			}
+		]
+	},
+	"fishing.line_strain": {
+		"subtitle": "subtitles.examplemod.fishing.line_strain",
+		"sounds": [
+			{
+				"name": "minecraft:block.chain.step",
+				"type": "event"
+			}
+		]
+	},
+	"fishing.low_hp": {
+		"subtitle": "subtitles.examplemod.fishing.low_hp",
+		"sounds": [
+			{
+				"name": "minecraft:block.note_block.bell",
+				"type": "event"
+			}
+		]
+	},
+	"fishing.catch": {
+		"subtitle": "subtitles.examplemod.fishing.catch",
+		"sounds": [
+			{
+				"name": "minecraft:entity.player.splash",
+				"type": "event"
+			}
+		]
+	},
+	"fishing.catch_rare": {
+		"subtitle": "subtitles.examplemod.fishing.catch_rare",
+		"sounds": [
+			{
+				"name": "minecraft:entity.player.levelup",
+				"type": "event"
+			}
+		]
+	},
+	"fishing.escape": {
+		"subtitle": "subtitles.examplemod.fishing.escape",
+		"sounds": [
+			{
+				"name": "minecraft:block.bubble_column.bubble_pop",
+				"type": "event"
+			}
+		]
+	},
+	"fishing.treasure": {
+		"subtitle": "subtitles.examplemod.fishing.treasure",
+		"sounds": [
+			{
+				"name": "minecraft:entity.experience_orb.pickup",
+				"type": "event"
+			}
+		]
+	},
+	"fishing.new_species": {
+		"subtitle": "subtitles.examplemod.fishing.new_species",
+		"sounds": [
+			{
+				"name": "minecraft:block.note_block.pling",
+				"type": "event"
+			}
+		]
+	},
+	"fishing.new_record": {
+		"subtitle": "subtitles.examplemod.fishing.new_record",
+		"sounds": [
+			{
+				"name": "minecraft:block.note_block.bit",
+				"type": "event"
+			}
+		]
+	},
+	"fishing.tackle_attach": {
+		"subtitle": "subtitles.examplemod.fishing.tackle_attach",
+		"sounds": [
+			{
+				"name": "minecraft:item.bundle.insert",
+				"type": "event"
+			}
+		]
+	},
+	"fishing.tackle_detach": {
+		"subtitle": "subtitles.examplemod.fishing.tackle_detach",
+		"sounds": [
+			{
+				"name": "minecraft:item.bundle.remove_one",
+				"type": "event"
+			}
+		]
+	},
+	"fishing.index_open": {
+		"subtitle": "subtitles.examplemod.fishing.index_open",
+		"sounds": [
+			{
+				"name": "minecraft:item.book.put",
+				"type": "event"
+			}
+		]
+	},
+	"fishing.index_page": {
+		"subtitle": "subtitles.examplemod.fishing.index_page",
+		"sounds": [
+			{
+				"name": "minecraft:item.book.page_turn",
+				"type": "event"
+			}
+		]
+	},
+	"fishing.index_select": {
+		"subtitle": "subtitles.examplemod.fishing.index_select",
+		"sounds": [
+			{
+				"name": "minecraft:ui.button.click",
+				"type": "event"
+			}
+		]
+	}
+}

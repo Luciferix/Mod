@@ -1,0 +1,36 @@
+{
+	"item": "examplemod:abyssal_leviathan",
+	"rarity": "legendary",
+	"weight": 5,
+	"size": {
+		"min_kg": 200.0,
+		"max_kg": 800.0
+	},
+	"difficulty": 1.8,
+	"habitats": [
+		"#examplemod:fishing_habitat/deep_oceans"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:glow": 2.0,
+			"examplemod:golden": 1.0
+		}
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.abyssal_leviathan.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.abyssal_leviathan.description"
+	},
+	"conditions": [
+		{
+			"type": "minecraft:time_check",
+			"clock": "minecraft:overworld",
+			"period": 24000,
+			"value": {
+				"min": 13000,
+				"max": 23000
+			}
+		}
+	]
+}

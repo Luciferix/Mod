@@ -1,0 +1,31 @@
+{
+	"item": "examplemod:ancient_koi",
+	"rarity": "legendary",
+	"weight": 10,
+	"size": {
+		"min_kg": 5.0,
+		"max_kg": 30.0
+	},
+	"difficulty": 1.5,
+	"habitats": [
+		"#examplemod:fishing_habitat/cherry_groves"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:golden": 2.0,
+			"examplemod:dough": 0.5
+		}
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.ancient_koi.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.ancient_koi.description"
+	},
+	"conditions": [
+		{
+			"type": "minecraft:weather_check",
+			"raining": true
+		}
+	]
+}

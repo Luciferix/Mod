@@ -1,0 +1,11 @@
+{
+	"values": [
+		"examplemod:copper_fishing_rod",
+		"examplemod:iron_fishing_rod",
+		"examplemod:golden_fishing_rod",
+		"examplemod:diamond_fishing_rod",
+		"examplemod:netherite_fishing_rod",
+		"examplemod:heirloom_fishing_rod"
+	],
+	"replace": false
+}

@@ -1,0 +1,27 @@
+{
+	"criteria": {
+		"overweight": {
+			"trigger": "examplemod:fish_caught",
+			"conditions": {
+				"overweight": true
+			}
+		}
+	},
+	"display": {
+		"icon": {
+			"id": "examplemod:reinforced_line"
+		},
+		"title": {
+			"translate": "advancements.examplemod.fishing.overweight.title"
+		},
+		"description": {
+			"translate": "advancements.examplemod.fishing.overweight.description"
+		}
+	},
+	"parent": "examplemod:fishing/big_one",
+	"requirements": [
+		[
+			"overweight"
+		]
+	]
+}

@@ -1,0 +1,28 @@
+{
+	"item": "minecraft:salmon",
+	"rarity": "common",
+	"weight": 15,
+	"size": {
+		"min_kg": 1.0,
+		"max_kg": 14.0
+	},
+	"difficulty": 1.0,
+	"habitats": [
+		"#examplemod:fishing_habitat/rivers",
+		"#examplemod:fishing_habitat/frozen_waters"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:worm": 1.0,
+			"examplemod:insect": 0.9,
+			"examplemod:fish": 0.8
+		},
+		"unbaited": 0.8
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.salmon.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.salmon.description"
+	}
+}

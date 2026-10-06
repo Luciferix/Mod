@@ -1,0 +1,11 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "misc",
+	"ingredients": [
+		"#examplemod:raw_fish"
+	],
+	"result": {
+		"id": "examplemod:cut_bait",
+		"count": 4
+	}
+}

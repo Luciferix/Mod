@@ -1,0 +1,27 @@
+{
+	"criteria": {
+		"huge": {
+			"trigger": "examplemod:fish_caught",
+			"conditions": {
+				"min_size": "huge"
+			}
+		}
+	},
+	"display": {
+		"icon": {
+			"id": "minecraft:fishing_rod"
+		},
+		"title": {
+			"translate": "advancements.examplemod.fishing.big_one.title"
+		},
+		"description": {
+			"translate": "advancements.examplemod.fishing.big_one.description"
+		}
+	},
+	"parent": "examplemod:fishing/root",
+	"requirements": [
+		[
+			"huge"
+		]
+	]
+}

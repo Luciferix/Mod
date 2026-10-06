@@ -1,0 +1,25 @@
+{
+	"item": "examplemod:arapaima",
+	"rarity": "epic",
+	"weight": 10,
+	"size": {
+		"min_kg": 20.0,
+		"max_kg": 180.0
+	},
+	"difficulty": 1.4,
+	"habitats": [
+		"#examplemod:fishing_habitat/jungle_waters"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:fish": 1.3,
+			"examplemod:golden": 1.0
+		}
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.arapaima.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.arapaima.description"
+	}
+}

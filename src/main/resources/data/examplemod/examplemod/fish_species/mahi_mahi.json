@@ -1,0 +1,25 @@
+{
+	"item": "examplemod:mahi_mahi",
+	"rarity": "rare",
+	"weight": 10,
+	"size": {
+		"min_kg": 3.0,
+		"max_kg": 28.0
+	},
+	"difficulty": 1.2,
+	"habitats": [
+		"#examplemod:fishing_habitat/warm_seas"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:shimmer": 1.5,
+			"examplemod:fish": 1.0
+		}
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.mahi_mahi.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.mahi_mahi.description"
+	}
+}

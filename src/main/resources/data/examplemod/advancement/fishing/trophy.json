@@ -1,0 +1,28 @@
+{
+	"criteria": {
+		"trophy": {
+			"trigger": "examplemod:fish_caught",
+			"conditions": {
+				"min_size": "trophy"
+			}
+		}
+	},
+	"display": {
+		"icon": {
+			"id": "examplemod:diamond_fishing_rod"
+		},
+		"title": {
+			"translate": "advancements.examplemod.fishing.trophy.title"
+		},
+		"description": {
+			"translate": "advancements.examplemod.fishing.trophy.description"
+		},
+		"frame": "goal"
+	},
+	"parent": "examplemod:fishing/big_one",
+	"requirements": [
+		[
+			"trophy"
+		]
+	]
+}

@@ -1,0 +1,28 @@
+{
+	"criteria": {
+		"legendary": {
+			"trigger": "examplemod:fish_caught",
+			"conditions": {
+				"min_rarity": "legendary"
+			}
+		}
+	},
+	"display": {
+		"icon": {
+			"id": "examplemod:river_monarch"
+		},
+		"title": {
+			"translate": "advancements.examplemod.fishing.legendary_catch.title"
+		},
+		"description": {
+			"translate": "advancements.examplemod.fishing.legendary_catch.description"
+		},
+		"frame": "challenge"
+	},
+	"parent": "examplemod:fishing/epic_catch",
+	"requirements": [
+		[
+			"legendary"
+		]
+	]
+}

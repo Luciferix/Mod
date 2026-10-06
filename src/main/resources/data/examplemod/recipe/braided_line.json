@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "misc",
+	"ingredients": [
+		"minecraft:string",
+		"minecraft:string",
+		"minecraft:string",
+		"minecraft:slime_ball"
+	],
+	"result": {
+		"id": "examplemod:braided_line"
+	}
+}

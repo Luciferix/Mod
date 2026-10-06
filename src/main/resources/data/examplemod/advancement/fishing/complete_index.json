@@ -1,0 +1,28 @@
+{
+	"criteria": {
+		"complete": {
+			"trigger": "examplemod:index_progress",
+			"conditions": {
+				"complete": true
+			}
+		}
+	},
+	"display": {
+		"icon": {
+			"id": "examplemod:heirloom_fishing_rod"
+		},
+		"title": {
+			"translate": "advancements.examplemod.fishing.complete_index.title"
+		},
+		"description": {
+			"translate": "advancements.examplemod.fishing.complete_index.description"
+		},
+		"frame": "challenge"
+	},
+	"parent": "examplemod:fishing/collector",
+	"requirements": [
+		[
+			"complete"
+		]
+	]
+}

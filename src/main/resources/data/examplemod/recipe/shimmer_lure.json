@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "misc",
+	"ingredients": [
+		"examplemod:spinner_lure",
+		"minecraft:amethyst_shard",
+		"minecraft:prismarine_crystals"
+	],
+	"result": {
+		"id": "examplemod:shimmer_lure"
+	}
+}

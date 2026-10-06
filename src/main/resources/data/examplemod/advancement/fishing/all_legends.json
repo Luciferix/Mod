@@ -1,0 +1,64 @@
+{
+	"criteria": {
+		"ancient_koi": {
+			"trigger": "examplemod:fish_caught",
+			"conditions": {
+				"species": "examplemod:ancient_koi"
+			}
+		},
+		"river_monarch": {
+			"trigger": "examplemod:fish_caught",
+			"conditions": {
+				"species": "examplemod:river_monarch"
+			}
+		},
+		"stormcaller_marlin": {
+			"trigger": "examplemod:fish_caught",
+			"conditions": {
+				"species": "examplemod:stormcaller_marlin"
+			}
+		},
+		"glacial_behemoth": {
+			"trigger": "examplemod:fish_caught",
+			"conditions": {
+				"species": "examplemod:glacial_behemoth"
+			}
+		},
+		"abyssal_leviathan": {
+			"trigger": "examplemod:fish_caught",
+			"conditions": {
+				"species": "examplemod:abyssal_leviathan"
+			}
+		}
+	},
+	"display": {
+		"icon": {
+			"id": "examplemod:abyssal_leviathan"
+		},
+		"title": {
+			"translate": "advancements.examplemod.fishing.all_legends.title"
+		},
+		"description": {
+			"translate": "advancements.examplemod.fishing.all_legends.description"
+		},
+		"frame": "challenge"
+	},
+	"parent": "examplemod:fishing/legendary_catch",
+	"requirements": [
+		[
+			"ancient_koi"
+		],
+		[
+			"river_monarch"
+		],
+		[
+			"stormcaller_marlin"
+		],
+		[
+			"glacial_behemoth"
+		],
+		[
+			"abyssal_leviathan"
+		]
+	]
+}

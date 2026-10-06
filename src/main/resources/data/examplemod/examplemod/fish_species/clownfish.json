@@ -1,0 +1,27 @@
+{
+	"item": "examplemod:clownfish",
+	"rarity": "common",
+	"weight": 12,
+	"size": {
+		"min_kg": 0.05,
+		"max_kg": 0.3
+	},
+	"difficulty": 0.8,
+	"habitats": [
+		"#examplemod:fishing_habitat/warm_seas"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:dough": 1.0,
+			"examplemod:insect": 0.8,
+			"examplemod:worm": 0.6
+		},
+		"unbaited": 0.6
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.clownfish.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.clownfish.description"
+	}
+}

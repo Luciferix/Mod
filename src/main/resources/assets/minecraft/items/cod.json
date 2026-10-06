@@ -1,0 +1,21 @@
+{
+	"model": {
+		"type": "minecraft:condition",
+		"property": "minecraft:has_component",
+		"component": "examplemod:index_silhouette",
+		"on_true": {
+			"type": "minecraft:model",
+			"model": "minecraft:item/cod",
+			"tints": [
+				{
+					"type": "minecraft:constant",
+					"value": -14016492
+				}
+			]
+		},
+		"on_false": {
+			"type": "minecraft:model",
+			"model": "minecraft:item/cod"
+		}
+	}
+}

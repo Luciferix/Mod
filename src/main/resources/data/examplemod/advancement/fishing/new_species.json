@@ -1,0 +1,27 @@
+{
+	"criteria": {
+		"discovered": {
+			"trigger": "examplemod:index_progress",
+			"conditions": {
+				"min_discovered": 5
+			}
+		}
+	},
+	"display": {
+		"icon": {
+			"id": "minecraft:tropical_fish"
+		},
+		"title": {
+			"translate": "advancements.examplemod.fishing.new_species.title"
+		},
+		"description": {
+			"translate": "advancements.examplemod.fishing.new_species.description"
+		}
+	},
+	"parent": "examplemod:fishing/root",
+	"requirements": [
+		[
+			"discovered"
+		]
+	]
+}

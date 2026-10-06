@@ -1,0 +1,25 @@
+{
+	"item": "examplemod:coelacanth",
+	"rarity": "epic",
+	"weight": 8,
+	"size": {
+		"min_kg": 20.0,
+		"max_kg": 95.0
+	},
+	"difficulty": 1.4,
+	"habitats": [
+		"#examplemod:fishing_habitat/deep_oceans"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:fish": 1.0,
+			"examplemod:glow": 1.0
+		}
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.coelacanth.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.coelacanth.description"
+	}
+}

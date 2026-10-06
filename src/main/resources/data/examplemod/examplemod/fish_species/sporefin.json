@@ -1,0 +1,26 @@
+{
+	"item": "examplemod:sporefin",
+	"rarity": "uncommon",
+	"weight": 10,
+	"size": {
+		"min_kg": 0.3,
+		"max_kg": 3.0
+	},
+	"difficulty": 1.0,
+	"habitats": [
+		"#examplemod:fishing_habitat/mushroom_isles"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:dough": 1.2,
+			"examplemod:insect": 1.0
+		},
+		"unbaited": 0.5
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.sporefin.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.sporefin.description"
+	}
+}

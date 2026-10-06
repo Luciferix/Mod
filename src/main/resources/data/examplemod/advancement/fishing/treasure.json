@@ -1,0 +1,24 @@
+{
+	"criteria": {
+		"treasure": {
+			"trigger": "examplemod:treasure_found"
+		}
+	},
+	"display": {
+		"icon": {
+			"id": "minecraft:nautilus_shell"
+		},
+		"title": {
+			"translate": "advancements.examplemod.fishing.treasure.title"
+		},
+		"description": {
+			"translate": "advancements.examplemod.fishing.treasure.description"
+		}
+	},
+	"parent": "examplemod:fishing/root",
+	"requirements": [
+		[
+			"treasure"
+		]
+	]
+}

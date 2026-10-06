@@ -1,0 +1,25 @@
+{
+	"item": "examplemod:bluefin_tuna",
+	"rarity": "epic",
+	"weight": 10,
+	"size": {
+		"min_kg": 30.0,
+		"max_kg": 380.0
+	},
+	"difficulty": 1.4,
+	"habitats": [
+		"#examplemod:fishing_habitat/deep_oceans"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:shimmer": 1.5,
+			"examplemod:fish": 1.0
+		}
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.bluefin_tuna.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.bluefin_tuna.description"
+	}
+}

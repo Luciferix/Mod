@@ -1,0 +1,26 @@
+{
+	"item": "examplemod:peacock_bass",
+	"rarity": "uncommon",
+	"weight": 10,
+	"size": {
+		"min_kg": 0.5,
+		"max_kg": 6.0
+	},
+	"difficulty": 1.0,
+	"habitats": [
+		"#examplemod:fishing_habitat/jungle_waters"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:fish": 1.3,
+			"examplemod:shimmer": 1.1,
+			"examplemod:insect": 0.6
+		}
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.peacock_bass.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.peacock_bass.description"
+	}
+}

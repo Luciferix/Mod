@@ -1,0 +1,28 @@
+{
+	"criteria": {
+		"discovered": {
+			"trigger": "examplemod:index_progress",
+			"conditions": {
+				"min_discovered": 20
+			}
+		}
+	},
+	"display": {
+		"icon": {
+			"id": "examplemod:fishing_index"
+		},
+		"title": {
+			"translate": "advancements.examplemod.fishing.collector.title"
+		},
+		"description": {
+			"translate": "advancements.examplemod.fishing.collector.description"
+		},
+		"frame": "goal"
+	},
+	"parent": "examplemod:fishing/new_species",
+	"requirements": [
+		[
+			"discovered"
+		]
+	]
+}

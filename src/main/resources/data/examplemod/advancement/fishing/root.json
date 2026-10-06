@@ -1,0 +1,26 @@
+{
+	"criteria": {
+		"caught_fish": {
+			"trigger": "examplemod:fish_caught"
+		}
+	},
+	"display": {
+		"icon": {
+			"id": "examplemod:fishing_index"
+		},
+		"title": {
+			"translate": "advancements.examplemod.fishing.root.title"
+		},
+		"description": {
+			"translate": "advancements.examplemod.fishing.root.description"
+		},
+		"background": "minecraft:gui/advancements/backgrounds/husbandry",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"requirements": [
+		[
+			"caught_fish"
+		]
+	]
+}

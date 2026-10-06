@@ -1,0 +1,28 @@
+{
+	"criteria": {
+		"epic": {
+			"trigger": "examplemod:fish_caught",
+			"conditions": {
+				"min_rarity": "epic"
+			}
+		}
+	},
+	"display": {
+		"icon": {
+			"id": "examplemod:sturgeon"
+		},
+		"title": {
+			"translate": "advancements.examplemod.fishing.epic_catch.title"
+		},
+		"description": {
+			"translate": "advancements.examplemod.fishing.epic_catch.description"
+		},
+		"frame": "goal"
+	},
+	"parent": "examplemod:fishing/rare_catch",
+	"requirements": [
+		[
+			"epic"
+		]
+	]
+}

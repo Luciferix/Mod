@@ -1,0 +1,26 @@
+{
+	"item": "examplemod:pike",
+	"rarity": "rare",
+	"weight": 10,
+	"size": {
+		"min_kg": 1.5,
+		"max_kg": 20.0
+	},
+	"difficulty": 1.2,
+	"habitats": [
+		"#examplemod:fishing_habitat/rivers",
+		"#examplemod:fishing_habitat/lakes"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:fish": 1.6,
+			"examplemod:shimmer": 1.0
+		}
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.pike.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.pike.description"
+	}
+}

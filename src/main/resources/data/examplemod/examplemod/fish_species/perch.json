@@ -1,0 +1,28 @@
+{
+	"item": "examplemod:perch",
+	"rarity": "common",
+	"weight": 12,
+	"size": {
+		"min_kg": 0.1,
+		"max_kg": 1.8
+	},
+	"difficulty": 1.0,
+	"habitats": [
+		"#examplemod:fishing_habitat/rivers",
+		"#examplemod:fishing_habitat/lakes"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:worm": 1.2,
+			"examplemod:fish": 0.7,
+			"examplemod:insect": 0.6
+		},
+		"unbaited": 0.5
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.perch.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.perch.description"
+	}
+}

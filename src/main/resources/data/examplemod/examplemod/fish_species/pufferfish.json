@@ -1,0 +1,27 @@
+{
+	"item": "minecraft:pufferfish",
+	"rarity": "uncommon",
+	"weight": 10,
+	"size": {
+		"min_kg": 0.2,
+		"max_kg": 2.5
+	},
+	"difficulty": 1.0,
+	"habitats": [
+		"#examplemod:fishing_habitat/warm_seas",
+		"#examplemod:fishing_habitat/coasts"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:fish": 1.0,
+			"examplemod:worm": 0.6
+		},
+		"unbaited": 0.5
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.pufferfish.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.pufferfish.description"
+	}
+}

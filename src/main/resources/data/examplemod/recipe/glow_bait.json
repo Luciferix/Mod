@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "misc",
+	"ingredients": [
+		"examplemod:worm",
+		"minecraft:glow_berries"
+	],
+	"result": {
+		"id": "examplemod:glow_bait",
+		"count": 2
+	}
+}

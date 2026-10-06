@@ -1,0 +1,12 @@
+{
+	"wants": {
+		"id": "minecraft:emerald",
+		"count": 7
+	},
+	"gives": {
+		"id": "examplemod:braided_line"
+	},
+	"max_uses": 6,
+	"reputation_discount": 0.05,
+	"xp": 10
+}

@@ -83,7 +83,7 @@ public final class CatchRewards {
 		SizeClass sizeClass = SizeClass.of(encounter.normalizedSize());
 		boolean newSpecies = previous == null;
 		boolean newRecord = previous != null && encounter.weightKg() > previous.bestKg();
-		FishingCriteria.FISH_CAUGHT.trigger(player, speciesId, species.rarity(), sizeClass, newSpecies);
+		FishingCriteria.FISH_CAUGHT.trigger(player, speciesId, species.rarity(), sizeClass, newSpecies, encounter.overweight());
 		int totalSpecies = FishingRegistries.species(level.registryAccess()).map(registry -> registry.size()).orElse(0);
 		FishingCriteria.INDEX_PROGRESS.trigger(player, after.species().size(), totalSpecies);
 		treasure.ifPresent(result -> FishingCriteria.TREASURE_FOUND.trigger(player, result.tier()));

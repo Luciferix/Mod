@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "misc",
+	"ingredients": [
+		"examplemod:iron_reel",
+		"minecraft:clock",
+		"minecraft:redstone"
+	],
+	"result": {
+		"id": "examplemod:clockwork_reel"
+	}
+}

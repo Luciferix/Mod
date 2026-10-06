@@ -1,0 +1,56 @@
+{
+	"type": "minecraft:fishing",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "examplemod:heirloom_fishing_rod",
+					"weight": 10,
+					"modifier": {
+						"type": "minecraft:enchant_with_levels",
+						"levels": 30,
+						"options": "#minecraft:on_random_loot"
+					}
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:heart_of_the_sea",
+					"weight": 12
+				},
+				{
+					"type": "minecraft:item",
+					"name": "examplemod:phantom_line",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "examplemod:clockwork_reel",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:trident",
+					"weight": 6,
+					"modifier": {
+						"type": "minecraft:enchant_with_levels",
+						"levels": 30,
+						"options": "#minecraft:on_random_loot"
+					}
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:enchanted_golden_apple",
+					"weight": 4
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:totem_of_undying",
+					"weight": 4
+				}
+			]
+		}
+	],
+	"random_sequence": "examplemod:gameplay/fishing_treasure/legendary"
+}

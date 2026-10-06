@@ -1,0 +1,26 @@
+{
+	"item": "examplemod:blind_cavefish",
+	"rarity": "common",
+	"weight": 15,
+	"size": {
+		"min_kg": 0.01,
+		"max_kg": 0.12
+	},
+	"difficulty": 0.8,
+	"habitats": [
+		"#examplemod:fishing_habitat/caves"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:worm": 1.0,
+			"examplemod:glow": 1.2
+		},
+		"unbaited": 0.8
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.blind_cavefish.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.blind_cavefish.description"
+	}
+}

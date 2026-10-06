@@ -1,0 +1,28 @@
+{
+	"item": "examplemod:minnow",
+	"rarity": "common",
+	"weight": 20,
+	"size": {
+		"min_kg": 0.005,
+		"max_kg": 0.06
+	},
+	"difficulty": 0.8,
+	"habitats": [
+		"#examplemod:fishing_habitat/rivers",
+		"#examplemod:fishing_habitat/lakes"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:worm": 1.0,
+			"examplemod:insect": 1.0,
+			"examplemod:dough": 0.8
+		},
+		"unbaited": 1.0
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.minnow.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.minnow.description"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"wants": {
+		"id": "minecraft:emerald",
+		"count": 5
+	},
+	"gives": {
+		"id": "examplemod:barbed_hook"
+	},
+	"max_uses": 6,
+	"reputation_discount": 0.05,
+	"xp": 5
+}

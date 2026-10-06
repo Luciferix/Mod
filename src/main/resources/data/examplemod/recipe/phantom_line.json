@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "misc",
+	"ingredients": [
+		"examplemod:reinforced_line",
+		"minecraft:phantom_membrane",
+		"minecraft:phantom_membrane"
+	],
+	"result": {
+		"id": "examplemod:phantom_line"
+	}
+}

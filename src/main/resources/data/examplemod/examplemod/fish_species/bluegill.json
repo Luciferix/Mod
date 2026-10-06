@@ -1,0 +1,28 @@
+{
+	"item": "examplemod:bluegill",
+	"rarity": "common",
+	"weight": 15,
+	"size": {
+		"min_kg": 0.05,
+		"max_kg": 0.6
+	},
+	"difficulty": 1.0,
+	"habitats": [
+		"#examplemod:fishing_habitat/lakes",
+		"#examplemod:fishing_habitat/rivers"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:insect": 1.3,
+			"examplemod:worm": 1.0,
+			"examplemod:dough": 0.6
+		},
+		"unbaited": 0.7
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.bluegill.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.bluegill.description"
+	}
+}

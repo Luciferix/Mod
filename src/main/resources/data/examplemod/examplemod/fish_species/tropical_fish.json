@@ -1,0 +1,26 @@
+{
+	"item": "minecraft:tropical_fish",
+	"rarity": "uncommon",
+	"weight": 12,
+	"size": {
+		"min_kg": 0.05,
+		"max_kg": 0.5
+	},
+	"difficulty": 0.8,
+	"habitats": [
+		"#examplemod:fishing_habitat/warm_seas"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:dough": 1.0,
+			"examplemod:insect": 0.8
+		},
+		"unbaited": 0.6
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.tropical_fish.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.tropical_fish.description"
+	}
+}

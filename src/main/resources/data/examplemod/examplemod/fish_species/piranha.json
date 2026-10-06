@@ -1,0 +1,26 @@
+{
+	"item": "examplemod:piranha",
+	"rarity": "common",
+	"weight": 15,
+	"size": {
+		"min_kg": 0.2,
+		"max_kg": 1.6
+	},
+	"difficulty": 1.1,
+	"habitats": [
+		"#examplemod:fishing_habitat/jungle_waters"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:fish": 1.5,
+			"examplemod:worm": 0.8
+		},
+		"unbaited": 0.6
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.piranha.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.piranha.description"
+	}
+}

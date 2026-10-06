@@ -1,0 +1,25 @@
+{
+	"item": "examplemod:sturgeon",
+	"rarity": "epic",
+	"weight": 10,
+	"size": {
+		"min_kg": 10.0,
+		"max_kg": 160.0
+	},
+	"difficulty": 1.3,
+	"habitats": [
+		"#examplemod:fishing_habitat/rivers"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:worm": 1.0,
+			"examplemod:fish": 1.0
+		}
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.sturgeon.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.sturgeon.description"
+	}
+}

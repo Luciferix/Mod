@@ -1,0 +1,27 @@
+{
+	"item": "examplemod:carp",
+	"rarity": "uncommon",
+	"weight": 10,
+	"size": {
+		"min_kg": 1.0,
+		"max_kg": 22.0
+	},
+	"difficulty": 1.1,
+	"habitats": [
+		"#examplemod:fishing_habitat/lakes",
+		"#examplemod:fishing_habitat/swamps"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:dough": 1.6,
+			"examplemod:worm": 0.6
+		},
+		"unbaited": 0.2
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.carp.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.carp.description"
+	}
+}

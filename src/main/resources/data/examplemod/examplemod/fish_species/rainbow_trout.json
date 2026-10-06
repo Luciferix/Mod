@@ -1,0 +1,26 @@
+{
+	"item": "examplemod:rainbow_trout",
+	"rarity": "uncommon",
+	"weight": 10,
+	"size": {
+		"min_kg": 0.4,
+		"max_kg": 5.0
+	},
+	"difficulty": 1.0,
+	"habitats": [
+		"#examplemod:fishing_habitat/rivers"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:insect": 1.5,
+			"examplemod:worm": 0.8,
+			"examplemod:shimmer": 0.6
+		}
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.rainbow_trout.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.rainbow_trout.description"
+	}
+}

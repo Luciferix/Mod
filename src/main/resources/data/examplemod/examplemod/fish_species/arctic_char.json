@@ -1,0 +1,27 @@
+{
+	"item": "examplemod:arctic_char",
+	"rarity": "uncommon",
+	"weight": 10,
+	"size": {
+		"min_kg": 0.5,
+		"max_kg": 9.0
+	},
+	"difficulty": 1.0,
+	"habitats": [
+		"#examplemod:fishing_habitat/frozen_waters"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:fish": 1.0,
+			"examplemod:worm": 1.0,
+			"examplemod:insect": 0.8
+		},
+		"unbaited": 0.3
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.arctic_char.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.arctic_char.description"
+	}
+}

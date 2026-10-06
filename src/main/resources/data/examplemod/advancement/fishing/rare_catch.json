@@ -1,0 +1,27 @@
+{
+	"criteria": {
+		"rare": {
+			"trigger": "examplemod:fish_caught",
+			"conditions": {
+				"min_rarity": "rare"
+			}
+		}
+	},
+	"display": {
+		"icon": {
+			"id": "examplemod:pike"
+		},
+		"title": {
+			"translate": "advancements.examplemod.fishing.rare_catch.title"
+		},
+		"description": {
+			"translate": "advancements.examplemod.fishing.rare_catch.description"
+		}
+	},
+	"parent": "examplemod:fishing/root",
+	"requirements": [
+		[
+			"rare"
+		]
+	]
+}

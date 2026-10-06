@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "misc",
+	"ingredients": [
+		"minecraft:rabbit_foot",
+		"minecraft:iron_nugget",
+		"minecraft:iron_nugget"
+	],
+	"result": {
+		"id": "examplemod:lucky_hook"
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"item": "examplemod:anglerfish",
+	"rarity": "rare",
+	"weight": 10,
+	"size": {
+		"min_kg": 1.0,
+		"max_kg": 35.0
+	},
+	"difficulty": 1.2,
+	"habitats": [
+		"#examplemod:fishing_habitat/deep_oceans"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:glow": 2.0,
+			"examplemod:fish": 0.7
+		}
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.anglerfish.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.anglerfish.description"
+	},
+	"conditions": [
+		{
+			"type": "minecraft:time_check",
+			"clock": "minecraft:overworld",
+			"period": 24000,
+			"value": {
+				"min": 13000,
+				"max": 23000
+			}
+		}
+	]
+}

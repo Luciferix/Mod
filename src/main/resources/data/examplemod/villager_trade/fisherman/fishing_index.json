@@ -1,0 +1,15 @@
+{
+	"wants": {
+		"id": "minecraft:emerald",
+		"count": 4
+	},
+	"gives": {
+		"id": "examplemod:fishing_index"
+	},
+	"max_uses": 4,
+	"reputation_discount": 0.05,
+	"xp": 2,
+	"additional_wants": {
+		"id": "minecraft:book"
+	}
+}

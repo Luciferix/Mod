@@ -1,0 +1,12 @@
+{
+	"wants": {
+		"id": "minecraft:emerald",
+		"count": 14
+	},
+	"gives": {
+		"id": "examplemod:shimmer_lure"
+	},
+	"max_uses": 3,
+	"reputation_discount": 0.05,
+	"xp": 30
+}

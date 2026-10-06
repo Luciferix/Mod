@@ -1,0 +1,25 @@
+{
+	"item": "examplemod:bowfin",
+	"rarity": "rare",
+	"weight": 10,
+	"size": {
+		"min_kg": 1.0,
+		"max_kg": 8.0
+	},
+	"difficulty": 1.2,
+	"habitats": [
+		"#examplemod:fishing_habitat/swamps"
+	],
+	"bait": {
+		"affinities": {
+			"examplemod:fish": 1.2,
+			"examplemod:worm": 0.8
+		}
+	},
+	"hint": {
+		"translate": "fishing.examplemod.species.bowfin.hint"
+	},
+	"description": {
+		"translate": "fishing.examplemod.species.bowfin.description"
+	}
+}
