@@ -1114,3 +1114,24 @@ Do not optimize for the amount of work.
 Optimize for the **quality of the player's experience**.
 
 Every feature should leave the project better than it was before.
+
+---
+
+# PROJECT SETUP (THIS REPO)
+
+This repo builds one feature on its own. The owner merges it into their main mod later, so keep it easy to merge. MERGING.md has the merge steps.
+
+* Fabric, Minecraft 26.3, Java 25. Versions are in `gradle.properties`.
+* Minecraft 26.x is unobfuscated: use Mojang's names (`Identifier`, not `ResourceLocation`). There are no mappings, and dependencies use `implementation`, not `modImplementation`.
+* Mod id `examplemod` and package `com.example.examplemod` are placeholders. They get renamed to the main mod's before merging.
+* Feature code goes only in the `bigfeature` packages (`src/main` and `src/client`). Rename `bigfeature` once the feature has a real name.
+* Never import `ExampleMod` or `ExampleModClient`. They stand in for the main mod's classes. Use `BigFeature.MOD_ID`, `BigFeature.id(...)` and `BigFeature.LOGGER`.
+* Hook into the game only from the `BigFeature` / `BigFeatureClient` entrypoints. Mixins go in feature-only configs (`examplemod.bigfeature.mixins.json`, plus a `.client` one for client mixins).
+* When adding a file the main mod may also have (lang files, `sounds.json`, vanilla tags), list it under "Shared files" in MERGING.md.
+* Mark new dependencies in the Gradle files with a `bigfeature` comment.
+
+## Testing
+
+The owner tests in-game after merging. Don't launch Minecraft or run in-game tests here. This replaces the testing steps in the sections above.
+
+Only make sure the code compiles. GitHub Actions builds every push. If the cloud sandbox can't download Minecraft, check that run instead of building locally.
